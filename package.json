@@ -1,17 +1,17 @@
 {
   "name": "eventsquare-remixicon-react-builder",
-  "private": true,
+  "private": false,
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/dathost/remixicon-react.git"
+    "url": "git+ssh://git@github.com:EventSquare/remixicon-react.git"
   },
   "author": "Willem Staels <willem.staels@eventsquare.co>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dathost/remixicon-react/issues"
+    "url": "https://github.com/EventSquare/remixicon-react/issues"
   },
-  "homepage": "https://github.com/dathost/remixicon-react",
+  "homepage": "https://github.com/EventSquare/remixicon-react",
   "scripts": {
     "clean-react": "rm -rf publish-react/*.js publish-react/*.d.ts publish-react/**/*.js publish-react/**/*.d.ts",
     "clean": "npm clean-react",

@@ -1,12 +1,12 @@
 {
-  "name": "dathost-remixicon-react-builder",
+  "name": "eventsquare-remixicon-react-builder",
   "private": true,
-  "version": "2.0.0",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/dathost/remixicon-react.git"
   },
-  "author": "Svante Boberg <svante@dathost.net>",
+  "author": "Willem Staels <willem.staels@eventsquare.co>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dathost/remixicon-react/issues"
@@ -18,7 +18,7 @@
     "build-react": "npm run clean-react && node scripts/generate-react.js && cp README.md publish-react/README.md && cp CHANGELOG.md publish-react/CHANGELOG.md && cp LICENSE publish-react/LICENSE"
   },
   "dependencies": {
-    "remixicon": "3.2.0"
+    "remixicon": "3.5.0"
   },
   "devDependencies": {
     "@swc/core": "^1.3.56",

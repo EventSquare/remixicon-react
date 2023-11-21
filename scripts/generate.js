@@ -7,17 +7,27 @@ const svgAttrRegex = /(?:\s*|^)([^= ]*)="([^"]*)"/g;
 const validIconName = /^[A-Z]/;
 
 function normalizeName(name) {
-  const normalizedName = 'Svg' + name.split(/[ -]/g).map(part => {
+  const normalizedName = name.split(/[ -]/g).map(part => {
     return part.charAt(0).toUpperCase() + part.slice(1);
-  }).join('');
+  }).join('') + 'Icon';
 
-  // Avoid name collisions between categories (only casing differs otherwise)
-  if (normalizedName === 'SvgBookMarkFill') {
-    return 'SvgDocumentBookMarkFill';
-  } else if (normalizedName === 'SvgBookMarkLine') {
-    return 'SvgDocumentBookMarkLine';
-  }
+  //console.log(`Normalized ${name} to ${normalizedName}`);
 
+  // Avoid name collisions between categories (only casing differs otherwise) or when icon starts with a number
+  switch(normalizedName) {
+    case 'BookMarkFillIcon':
+      return 'DocumentBookMarkFillIcon';
+    case 'BookMarkLineIcon':
+      return 'DocumentBookMarkLineIcon';
+    case '24HoursFillIcon':
+      return 'TwentyFourHoursFillIcon';
+    case '24HoursLineIcon':
+      return 'TwentyFourHoursLineIcon';
+    case '4kFillIcon':
+      return 'FourKFillIcon';
+    case '4kLineIcon':
+      return 'FourKLineIcon';
+  }  
   return normalizedName;
 }
 

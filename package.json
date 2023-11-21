@@ -1,7 +1,7 @@
 {
-  "name": "eventsquare-remixicon-react-builder",
+  "name": "eventsquare-remixicon-react",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com:EventSquare/remixicon-react.git"
